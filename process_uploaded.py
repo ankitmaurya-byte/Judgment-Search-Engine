@@ -3,11 +3,12 @@ import glob, os
 from pathlib import Path
 import subprocess
 
-PDF_DIR = "/mnt/data"
+PDF_DIR = "./mnt/data"
 OUT_DIR = "./output"
 
 def process_all():
-    pdfs = glob.glob(os.path.join(PDF_DIR, "*.PDF")) + glob.glob(os.path.join(PDF_DIR, "*.pdf"))
+    pdfs = glob.glob(os.path.join(PDF_DIR, "*")) + glob.glob(os.path.join(PDF_DIR, "*.pdf"))
+    print("Found PDFs:", os.path.join(PDF_DIR, "*"), os.path.join(PDF_DIR, "*.pdf"))
     if not pdfs:
         print("No PDFs found in", PDF_DIR)
         return
