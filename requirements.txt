@@ -1,14 +1,14 @@
-numpy<2
-sentence-transformers==2.2.2
-huggingface_hub==0.13.3
-faiss-cpu==1.7.4  # remove if you plan to use hnswlib/annoy/qdrant
+numpy>=1.23.0,<2.0.0
+sentence-transformers~=2.7.0
+huggingface_hub~=0.20.0
+faiss-cpu==1.7.4
 rank-bm25==0.2.2
-pdfplumber==0.7.6
-pymupdf==1.22.5
-pytesseract==0.3.10
-camelot-py[cv]==0.10.1
+pdfplumber~=0.11.0
+pymupdf~=1.23.0
+pytesseract~=0.3.10
+camelot-py[cv]~=0.11.0
 fastapi
 uvicorn
 tqdm
 pandas
-hnswlib  # optional: for vector search alternative
+hnswlib # optional: for vector search alternative
